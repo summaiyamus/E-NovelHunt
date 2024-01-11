@@ -1,0 +1,74 @@
+﻿
+.card {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+
+
+
+h2 {
+    font-family: 'Courgette', cursive;
+    font-size: 3em;
+    text-shadow: 10px 10px 10px #512d38;
+    color: #512d38;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-family: 'Charmonman', cursive;
+    font-size: larger;
+}
+
+.box {
+    font-family: 'Charmonman', cursive;
+    font-size: larger;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 8px 5px 15px #f4bfdb;
+    outline: none;
+}
+
+.signup-btn, .login-btn {
+    font-family: 'Charmonman', cursive;
+    font-size: 1em;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 8px 5px 15px #f4bfdb;
+    outline: none;
+}
+
+!.login-btn,.login-btn:hover, .signup-btn:hover,
+.signup-btn:focus {
+    color: #6495ed;
+    cursor: pointer;
+}

@@ -1,0 +1,218 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ENovelHunt.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+                nav {
+             overflow:hidden;
+              z-index: 999;
+            position: sticky;
+            padding: 10px;
+            color:#ffffff;
+            background-color: #b27092;
+            text-decoration: none;
+        }
+
+
+            nav a {
+             overflow:hidden;
+
+                font-size: 1.5em;
+                padding: 20px;
+                text-decoration: none;
+                color: #ffffff;
+            }
+
+        a:hover {
+            font-size: 1.7em;
+            color: #512d38;
+             font-weight:bold;
+
+        }
+
+        .nav {
+            position: sticky;
+            top: 0;
+             z-index: 999;
+              display: flex;
+              overflow:hidden;
+                justify-content: space-between;
+                align-items: center;
+                    }
+     
+
+            .buttons {
+                margin-left: auto;
+            }
+            
+.login-btn,
+.signup-btn {
+    background-color: #512d38;
+    border-radius:10px;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login:hover,
+.signup:hover {
+    background-color: #512d38;
+    color: #fff;
+     font-weight:bold;
+    opacity:0.9;
+}
+
+  ::selection {
+  background-color: #9d8189; /* Replace with your desired highlight color */
+  color: #5d2a42; /* Replace with your desired text color */
+}
+    </style>
+    <%--font--%>
+     <%--font--%>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <%-- bootstrap css link--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--custom css link--%>
+    <link href="css/master.css" rel="stylesheet" />
+
+    <%--datatable css link--%>
+    <link href="datatables/cs/css.css" rel="stylesheet" />
+    <%--fontawesome css link--%>
+    <link href="fontawesom/css/all.css" rel="stylesheet" />
+    <%--jquery--%>
+    <script src="bootstrap/js/jquery-3.0.0.min.js"></script>
+    <%--popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <header>
+  <h1>Welcome to  <br />E-Novel Hunt</h1>
+  
+</header>
+
+
+     <nav class="nav">
+        
+            <a href="home.aspx">Home</a>
+            <a href="about.aspx">About us</a>
+            <a href="contact.aspx">Contact us</a>
+
+              <div class="buttons">
+        <a href="login.aspx" class="login">Login</a>
+        <a href="WebForm1.aspx" class="signup">Signup</a>
+    </div>
+            
+        </nav>
+
+
+<%--<section>      
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">E-Novel Hunt</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="myprofile.html">My Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Catagories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">History</a></li>
+                                <li><a class="dropdown-item" href="#">Romance</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Thriller</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <div class="buttons">
+                        <a href="login.aspx"><button>Login</button></a>
+                        <a href="WebForm1.aspx"><button>Signup</button></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+    </section>--%>
+
+
+
+
+
+
+<%--   <form id="form1" runat="server">--%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+<%--    </form>--%>
+
+    <%--footer section--%>
+
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Novels</a></li>
+                    <li><a href="tv.html">About Authers</a></li>
+                    <li><a href="celebs.html">New Arrivals</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
+            <div class="social_icon">
+                <ul>
+                    <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                    <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                    <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                    <li><a href="#"><img src="images/instagram-icon.png" alt="image"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
